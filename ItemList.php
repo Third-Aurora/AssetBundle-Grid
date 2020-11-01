@@ -1,7 +1,7 @@
 <?php
 
 $folder = "AssetBundles/";
-$mask = "*IOS.*";
+$mask = "*Android*";
 $files = glob("" . $folder . $mask);
 
 foreach ($files as $file) {
