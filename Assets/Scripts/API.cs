@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
@@ -21,7 +22,12 @@ public class API : MonoBehaviour {
             Debug.Log("Network error");
         } else {
             string rawText = www.downloadHandler.text;
-            Debug.Log(rawText);
+            //split string by comma
+            string[] items = rawText.Split(',');
+            //remove empty values and convert to list
+            List<string> itemList = items.Where(x => !string.IsNullOrEmpty(x)).ToList();
+            //return list to caller
+            callback.Invoke(itemList);
         }
     }
 

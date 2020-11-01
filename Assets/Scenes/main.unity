@@ -278,11 +278,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   api: {fileID: 9561883}
+  contentController: {fileID: 535958213}
   Scrollmenu: {fileID: 1761899678}
   MenuButton: {fileID: 582146427}
   ButtonPrefab: {fileID: 2320303591661368659, guid: d5b85cc2e918347109cb18d7a19e4ead,
     type: 3}
-  ButtonParent: {fileID: 463152779}
+  ButtonParent: {fileID: 463152780}
 --- !u!1 &463152779
 GameObject:
   m_ObjectHideFlags: 0

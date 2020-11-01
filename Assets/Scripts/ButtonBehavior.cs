@@ -7,9 +7,6 @@ public class ButtonBehavior : MonoBehaviour {
 
     public void Init(string name) {
         buttonText.text = name;
-    }
-
-    public void ButtonPressed() {
-
+        gameObject.name = name;
     }
 }
